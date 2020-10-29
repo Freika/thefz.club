@@ -31,5 +31,8 @@ module ThefzClub
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.eager_load_paths << Rails.root.join('app', 'services')
+    config.autoload_paths += [config.root.join('app', 'services')]
+    # config.telegram_updates_controller.session_store = :redis_store, {expires_in: 1.month}
   end
 end
