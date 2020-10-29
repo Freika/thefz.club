@@ -1,3 +1,4 @@
+DEFAULT_BOT_TOKEN = ''.freeze
 
 Telegram.bot_poller_mode = true
 
